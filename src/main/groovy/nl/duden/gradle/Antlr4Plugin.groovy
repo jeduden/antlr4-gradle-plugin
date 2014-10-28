@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package me.champeau.gradle
+package nl.duden.gradle
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -34,7 +34,7 @@ class Antlr4Plugin implements Plugin<Project> {
             antlr4
         }
         project.dependencies {
-            antlr4 'org.antlr:antlr4:4.2.2'
+            antlr4 'nl.duden:antlr4:4.5-SNAPSHOT'
         }
 
         project.task('antlr4', type:Antlr4Task)
